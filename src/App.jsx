@@ -10,14 +10,20 @@ function App() {
   return (
     <>
       <div className="my__card">
-        <Photo />
-        <div className="my__card-padding">
-          <Info />
+        <div className="my__card-lg__screen">
+          <div className="intro">
+            <Photo />
+            </div>
+            <div className='my__card-info-int'>
+            <Info />
+            <Interests />
+          </div>
+        </div>
+        <div>
           <About />
           <Button />
-          <Interests />
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );

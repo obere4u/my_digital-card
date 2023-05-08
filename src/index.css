@@ -23,17 +23,43 @@ body {
 }
 
 .my__card {
-  margin: 2.125em auto;
-  margin-bottom: 3rem !important;
-  width: 400px;
+  width: min(400px, 95%);
   box-shadow: 4px 4px 4px rgba(0 0 0 0 / 0.5);
   border: 1px solid #333;
+  margin-inline: auto;
   border-radius: 15px;
 }
 
-.my__card-padding {
-  padding: 1em;
-  padding-bottom: 0;
+@media screen and (min-width: 450px) {
+  .my__card {
+    width: min(800px, 95%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .my__card {
+    margin-top: 5em;
+  }
+
+  .my__card-lg__screen {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-content: center;
+  }
+
+  .my__card-interests {
+    display: grid;
+    place-content: center;
+  }
+
+  .my__card-interests-lists >li {
+    place-self: center;
+  }
+
+  .my__card-info__title {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+  }
 }
 
 .my__card-photo {
@@ -43,29 +69,38 @@ body {
 
 .my__card-photo__credit {
   background-color:rgba(0,0,0,0.2);
-  margin-top: -2px; 
+  margin-top: -2px;
+  padding: 0.1em;
   font-size: 0.75rem;
 }
 
-.my__card-info__title, 
-.my__card-about__title, 
+.my__card-about, .my__card-info, .my__card-interests {
+  padding: 0 2em;
+}
+
+.my__card-info__title,
+.my__card-about__title,
 .my__card-interests__title {
   font-family: var(--font-family__playfair);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  letter-spacing: 1px; 
-  margin-top: 1em;
+  letter-spacing: 1px;
+  margin-top: 1.5em;
 }
 
-.my__card-info__text, 
+.my__card-info__title {
+  margin-top: 0.3em;
+}
+
+.my__card-info__text,
 .my__card-about__text {
   text-align: center;
+  line-height: 1.6;
 }
 
 .my__card-about__text {
   margin-top: 0.5rem;
-  line-height: 1.6;
 }
 
 .my__card-CTA {
@@ -78,7 +113,6 @@ body {
 
 .my__card-CTA > a {
   text-decoration: none;
-  
 }
 
 .my__card-CTA__link {
@@ -95,8 +129,11 @@ body {
   gap: 0.5em;
 }
 
+.my__card-CTA__link:hover {
+  opacity: 0.8;
+}
 
- .my__card-CTA__link + .my__card-CTA__link{
+.my__card-CTA__link + .my__card-CTA__link{
   margin-left: 1em;
 }
 
@@ -121,7 +158,7 @@ body {
 }
 
 .my__card-interests__lists {
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 0.5em;
 }
 
@@ -160,3 +197,8 @@ body {
 .my__card-footer__icon + .my__card-footer__icon {
   margin-left: 2rem;
 }
+
+.my__card-footer__icon:hover {
+  color: grey;
+}
+

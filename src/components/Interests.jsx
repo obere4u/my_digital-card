@@ -4,7 +4,7 @@ function Interests() {
   return (
     <div className="my__card-interests">
       <h4 className="my__card-interests__title">Interests</h4>
-      <p className="my__card-interests__text">{`When i'm not coding, I love`}</p>
+      <p className="my__card-interests__text">{`When i'm not coding, I love ...`}</p>
       <ul className="my__card-interests__lists">
         <li>Reading Tech articles / world news</li>
         <li>Playing / watching football</li>

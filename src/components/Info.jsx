@@ -5,7 +5,7 @@ function Info() {
     <div className="my__card-info">
       <h1 className="my__card-info__title">Tochukwu Nwosa</h1>
       <p className="my__card-info__text">
-        Frontend Developer ||
+        Frontend Developer
         <strong> HTML </strong> ||
         <strong> CSS </strong> ||
         <strong> Tailwindcss </strong> ||
