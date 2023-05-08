@@ -6,28 +6,26 @@ import { AiFillLinkedin } from 'react-icons/ai'
 function Button() {
   return (
     <div className="my__card-CTA ">
-      <button
-        type="button"
-        className="my__card-CTA__link"
+      <a
+        href="mailto:obere4u@gmail.com"
+        className="email"
       >
-        <a
-          href="mailto:obere4u@gmail.com"
-          className="email"
+        <button
+          type="button"
+          className="my__card-CTA__link email"
         >
-          <GrMail /> Email
-        </a>
-      </button>
-      <button
-        type="button"
-        className="my__card-CTA__link linkedin"
+          <GrMail aria-hidden="true" className="my__card-CTA__link-icon"/> Email
+        </button>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwosa-tochukwu/"
+        className="linkedin"
       >
-        <a
-          href="https://www.linkedin.com/in/nwosa-tochukwu/"
-          className="linkedin"
+        <button type="button" className="my__card-CTA__link linkedin"
         >
-          <AiFillLinkedin aria-hidden /> LinkedIn
-        </a>
-      </button>
+          <AiFillLinkedin aria-hidden="true" className="my__card-CTA__link-icon"/> LinkedIn
+        </button>
+      </a>
     </div>
   );
 }

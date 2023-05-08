@@ -6,50 +6,54 @@ import { FaGithub, FaTwitterSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="my__card-footer my__card-CTA">
-      <button
-        type="button"
-        className="my__card-CTA__link github"
+    <footer className="my__card-footer">
+      <a
+        href="https://www.github.com/obere4u"
+        className="my__card-footer__icon"
       >
-        <a
-          href="https://www.github.com/obere4u"
-          className="github">
-          <FaGithub aria-hidden /> Github
-        </a>
-      </button>
-      <button
-        type="button"
-        className="my__card-CTA__link  twitter"
-      >
-        <a
-          href="https://www.twitter.com/TochiObere"
-          className="twitter"
+        <button
+          type="button"
+          className="my__card-footer__icon"
         >
-          <FaTwitterSquare aria-hidden /> Twitter
-        </a>
-      </button>
-      <button
-        type="button"
-        className="my__card-CTA__link linkedin"
+          <FaGithub
+            aria-hidden="true"
+            className="my__card-footer__icon"
+          />
+        </button>
+      </a>
+      <a
+        href="https://www.twitter.com/TochiObere"
+        className="my__card-footer__icon"
       >
-        <a
-          href="https://www.linkedin.com/in/nwosa-tochukwu/"
-          className="linkedin"
+        <button
+          type="button"
+          className="my__card-footer__icon"
         >
-          <AiFillLinkedin aria-hidden /> LinkedIn
-        </a>
-      </button>
-      <button
-        type="button"
-        className="my__card-CTA__link"
+          <FaTwitterSquare aria-hidden="true" />
+        </button>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwosa-tochukwu/"
+        className="my__card-footer__icon"
       >
-        <a
-          href="https://www.codepen.io/obere4u"
-          className="codepen"
+        <button
+          type="button"
+          className="my__card-footer__icon"
         >
-          <AiOutlineCodepen aria-hidden /> Codepen
-        </a>
-      </button>
+          <AiFillLinkedin aria-hidden="true" />
+        </button>
+      </a>
+      <a
+        href="https://www.codepen.io/obere4u"
+        className="my__card-footer__icon"
+      >
+        <button
+          type="button"
+          className="my__card-footer__icon"
+        >
+          <AiOutlineCodepen aria-hidden="true" />
+        </button>
+      </a>
     </footer>
   );
 }

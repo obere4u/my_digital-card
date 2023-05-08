@@ -12,12 +12,12 @@ function App() {
       <div className="my__card">
         <Photo />
         <div className="my__card-padding">
-        <Info />
+          <Info />
           <About />
           <Button />
           <Interests />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );
