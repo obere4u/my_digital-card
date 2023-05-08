@@ -1,0 +1,112 @@
+:root {
+  --font-family__inter: "Inter", sans-serif;
+  --font-family__playfair: "Playfair Display", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-family__inter);
+  background-color: #23252c;
+  color: #fff;
+}
+
+.my__card {
+  margin: 3.125em auto;
+  width: 400px;
+  box-shadow: 4px 4px 4px rgba(0 0 0 0 / 0.5);
+  border: 1px solid #333;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.my__card-padding {
+  padding: 1em;
+}
+
+.my__card-photo {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.my__card-photo__credit {
+  background-color:rgba(0,0,0,0.2);
+  margin-top: -2px; 
+  font-size: 0.75rem;
+}
+
+.my__card-info__title, 
+.my__card-about__title, 
+.my__card-interests__title {
+  font-family: var(--font-family__playfair);
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px; 
+  margin-top: 1em;
+}
+
+.my__card-info__text, 
+.my__card-about__text {
+  text-align: center;
+}
+
+.my__card-about__text {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.my__card-CTA {
+  text-align: center;
+  margin-top: 0.8em;
+}
+
+.my__card-CTA__link {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background-color: #374151;
+}
+
+.my__card-CTA__link.linkedin {
+  background: ;
+}
+
+.email, .codepen {
+  color: #fff;
+}
+
+.linkedin {
+  color: rgb(78, 78, 230);
+}
+
+.my__card-CTA__link > a {
+  text-decoration: none;
+}
+
+ .my__card-CTA__link + .my__card-CTA__link{
+  margin-left: 1em;
+}
+
+
+.my__card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my__card-CTA__link.codepen {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
