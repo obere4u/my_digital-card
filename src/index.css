@@ -30,37 +30,7 @@ body {
   border-radius: 15px;
 }
 
-@media screen and (min-width: 450px) {
-  .my__card {
-    width: min(800px, 95%);
-  }
-}
 
-@media screen and (min-width: 900px) {
-  .my__card {
-    margin-top: 5em;
-  }
-
-  .my__card-lg__screen {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    place-content: center;
-  }
-
-  .my__card-interests {
-    display: grid;
-    place-content: center;
-  }
-
-  .my__card-interests-lists >li {
-    place-self: center;
-  }
-
-  .my__card-info__title {
-    font-size: 4rem;
-    margin-bottom: 0.5em;
-  }
-}
 
 .my__card-photo {
   border-top-left-radius: 15px;
@@ -202,3 +172,36 @@ body {
   color: grey;
 }
 
+@media screen and (min-width: 450px) {
+  .my__card {
+    width: min(800px, 95%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .my__card {
+    margin-top: 5em;
+  }
+
+  .my__card-lg__screen {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-content: center;
+  }
+
+  .my__card-interests {
+    display: grid;
+    place-content: center;
+  }
+
+  .my__card-interests-lists >li {
+    place-self: center;
+  }
+
+  .my__card-info__title {
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+  }
+
+  
+}
