@@ -185,7 +185,7 @@ body {
 
   .my__card-lg__screen {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     place-content: center;
   }
 
@@ -205,5 +205,9 @@ body {
 
   .my__card-footer___icon {
     font-size: 3rem;
+  }
+
+  .my__card-main {
+    display: flex;
   }
 }

@@ -13,17 +13,15 @@ function App() {
         <div className="my__card-lg__screen">
           <div className="intro">
             <Photo />
-            </div>
-            <div className='my__card-info-int'>
-            <Info />
             <Interests />
           </div>
+          <div className="my__card-info-int">
+            <Info />
+            <About />
+            <Button />
+          </div>
         </div>
-        <div>
-          <About />
-          <Button />
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );
