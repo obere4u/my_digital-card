@@ -203,5 +203,7 @@ body {
     margin-bottom: 0.5em;
   }
 
-  
+  .my__card-footer___icon {
+    font-size: 3rem;
+  }
 }
