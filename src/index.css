@@ -30,21 +30,21 @@ body {
   border-radius: 15px;
 }
 
-
-
 .my__card-photo {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 .my__card-photo__credit {
-  background-color:rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   margin-top: -2px;
   padding: 0.1em;
   font-size: 0.75rem;
 }
 
-.my__card-about, .my__card-info, .my__card-interests {
+.my__card-about,
+.my__card-info,
+.my__card-interests {
   padding: 0 2em;
 }
 
@@ -97,13 +97,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+
+  transition:  opacity 150ms ease-in-out;
 }
 
 .my__card-CTA__link:hover {
   opacity: 0.8;
 }
 
-.my__card-CTA__link + .my__card-CTA__link{
+.my__card-CTA__link + .my__card-CTA__link {
   margin-left: 1em;
 }
 
@@ -138,7 +140,7 @@ body {
 
 .my__card-interests__lists > li::marker {
   color: #00ff;
-  font-size: 1.4rem
+  font-size: 1.4rem;
 }
 
 .my__card-footer {
@@ -153,7 +155,6 @@ body {
 
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-
 }
 
 .my__card-footer__icon {
@@ -162,10 +163,11 @@ body {
   cursor: pointer;
   font-size: 1.3rem;
   color: #fff;
+  transition:  color 150ms ease-in-out;
 }
 
 .my__card-footer__icon + .my__card-footer__icon {
-  margin-left: 2rem;
+  margin-left: 2em;
 }
 
 .my__card-footer__icon:hover {
@@ -180,21 +182,19 @@ body {
 
 @media screen and (min-width: 900px) {
   .my__card {
-    margin-top: 5em;
+    margin-top: 5em;    
   }
 
-  .my__card-lg__screen {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    place-content: center;
-  }
+.my__card-lg__screen {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
 
   .my__card-interests {
-    display: grid;
-    place-content: center;
+    margin-top: -8em;
   }
 
-  .my__card-interests-lists >li {
+  .my__card-interests-lists > li {
     place-self: center;
   }
 
@@ -210,4 +210,12 @@ body {
   .my__card-main {
     display: flex;
   }
+
+  .my__card-footer__icon {
+    font-size: 1.5rem;
+  }
+
+  .my__card-footer__icon + .my__card-footer__icon {
+  margin-left: 3em;
+}
 }
